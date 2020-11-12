@@ -23,6 +23,14 @@ export class AppComponent {
       content: blueprintData.blueprintContent
     });
   }
+
+  onChangeFirst() {
+    this.serverElements[0].name = 'changed!';
+  }
+
+  onDestoryFirst() {
+    this.serverElements.splice(0,1);
+  }
 }
 
 
